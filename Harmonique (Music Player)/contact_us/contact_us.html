@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact_us.css">
+</head>
+<body>
+
+    <nav>
+        <ul class="nav_list">
+            <img src="../images/main_logo1.png" alt="Harmonique">
+            Harmonique
+
+            <div class="nav-right">
+                <li><a class="hov Home" href="../index.html">Home</a></li>
+                <li><a class="hov Generes" href="../index.html#genres">Genres</a></li>
+                <li><a class="hov Discover" href="../index.html#top-rated">Discover</a></li>
+                <li><a class="hov ContactUs" href="../contact_us/contact_us.html">Contact Us</a></li>
+                <li><a class="hov Login" href="../login/login.html">Login</a></li>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropdown-btn" onclick="toggleMenu()">Menu</button>
+                <div class="dropdown-menu" id="menu">
+                    <a href="../index.html#home">Home</a>
+                    <a href="../index.html#genres">Genres</a>
+                    <a href="../index.html#top-rated">Discover</a>
+                    <a href="../contact_us/contact_us.html">Contact Us</a>
+                    <a href="../login/login.html">Login</a>
+                </div>
+            </div>
+        </ul>
+    </nav>
+
+    <div class="contact-container">
+        <h2 class="heading">Contact Us</h2>
+        <p>Have questions or feedback? Reach out to us!</p>
+        <form>
+            <input class="box" type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <input class="box" type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <textarea class="box" id="message" name="message" rows="4" placeholder="Enter your message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+	<script src="../script.js"></script>
+</body>
+</html>

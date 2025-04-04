@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmonique</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/main_logo1.png" type="image/png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav_list">
+                <img src="images/main_logo1.png" alt="Harmonique">
+                Harmonique
+
+                <div class="nav-right">
+                    <li><a class="hov Home" href="index.html">Home</a></li>
+                    <li><a class="hov Generes" href="#genres">Genres</a></li>
+                    <li><a class="hov Discover" href="#top-rated">Discover</a></li>
+                    <li><a class="hov ContactUs" href="contact_us/contact_us.html">Contact Us</a></li>
+                    <li><a class="hov Login" href="login/login.html">Login</a></li>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropdown-btn" onclick="toggleMenu()">Menu</button>
+                    <div class="dropdown-menu" id="menu">
+                        <a href="#home">Home</a>
+                        <a href="#genres">Genres</a>
+                        <a href="#top-rated">Discover</a>
+                        <a href="contact_us/contact_us.html">Contact Us</a>
+                        <a href="login/login.html">Login</a>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="container" id="ho">
+            <div class="music_conatiner">
+                <img class="playlist_pic" src="images/Album_Thumbnail/Arijit Singh.webp" alt="Arijit Singh">
+                <span class="playlist_heading">
+                    <h1>Arijit Singh</h1>
+                </span>
+                <div class="song_list main_playlist">
+                    <div class="song">
+                        <img class="song_pic" src="images/Arijit Singh Poster/apna_bana_le_pic.jpg" alt="song_1">
+                        <span class="song_name">Apna Bana Le - Bhediya</span>
+                        <span class="song_time">04:32</span>
+                        <img class="song_play" src="images/play_button.png" alt="play/pause">
+                    </div>
+                    <div class="song">
+                        <img class="song_pic" src="images/Arijit Singh Poster/qaafirana_pic.webp" alt="song_1">
+                        <span class="song_name">Qaafirana - Kedarnath</span>
+                        <span class="song_time">05:42</span>
+                        <img class="song_play" src="images/play_button.png" alt="play/pause">
+                    </div>
+                    <div class="song">
+                        <img class="song_pic" src="images/Arijit Singh Poster/ilahi_pic.jpg" alt="song_1">
+                        <span class="song_name">Ilahi - Yeh Jawaani Hai Deewani</span>
+                        <span class="song_time">03:49</span>
+                        <img class="song_play" src="images/play_button.png" alt="play/pause">
+                    </div>
+                    <div class="song">
+                        <img class="song_pic" src="images/Arijit Singh Poster/soulmate_pic.jpg" alt="song_1">
+                        <span class="song_name">Soulmate - Ek Tha Raja</span>
+                        <span class="song_time">03:34</span>
+                        <img class="song_play" src="images/play_button.png" alt="play/pause">
+                    </div>
+                    <div class="song">
+                        <img class="song_pic" src="images/Arijit Singh Poster/tainu_khabar_nahi_pic.jpg" alt="song_1">
+                        <span class="song_name">Tainu Khabar Nahi - Munjya</span>
+                        <span class="song_time">03:08</span>
+                        <img class="song_play" src="images/play_button.png" alt="play/pause">
+                    </div>
+                    <div class="song">
+                        <img class="song_pic" src="images/Arijit Singh Poster/kesariya pic.jpeg" alt="song_1">
+                        <span class="song_name">Kesariya - Bramhastra</span>
+                        <span class="song_time">04:00</span>
+                        <img class="song_play" src="images/play_button.png" alt="play/pause">
+                    </div>
+                    <div class="song">
+                        <img class="song_pic" src="images/Arijit Singh Poster/Tumhare Hi Rahenge Hum.jpeg" alt="song_1">
+                        <span class="song_name">Tumhare Hi Rahenge Hum</span>
+                        <span class="song_time">03:50</span>
+                        <img class="song_play" src="images/play_button.png" alt="play/pause">
+                    </div>
+                    <div class="song">
+                        <img class="song_pic" src="images/Arijit Singh Poster/sajni.jpeg" alt="song_1">
+                        <span class="song_name">Sajni - Laapataa Ladies</span>
+                        <span class="song_time">02:50</span>
+                        <img class="song_play" src="images/play_button.png" alt="play/pause">
+                    </div>
+                    <div class="song">
+                        <img class="song_pic" src="images/Arijit Singh Poster/Sahiba.jpeg" alt="song_1">
+                        <span class="song_name">Sahiba - Jasleen Royal</span>
+                        <span class="song_time">03:37</span>
+                        <img class="song_play" src="images/play_button.png" alt="play/pause">
+                    </div>
+                    <div class="song">
+                        <img class="song_pic" src="images/Arijit Singh Poster/ksaturi.jpeg" alt="song_1">
+                        <span class="song_name">Kasturi - Ek Jaisa Haal</span>
+                        <span class="song_time">03:57</span>
+                        <img class="song_play" src="images/play_button.png" alt="play/pause">
+                    </div>
+                </div>
+            </div>
+
+            <div class="playlist_container">
+
+                <!-- Popular Singers -->
+                <h2 class="popular-singers-haeding">Popular Singers</h2>
+                <div class="popular-singers">
+                    <div class="card load">
+                        <img class="load" src="images/Album_Thumbnail/Arijit Singh.webp" alt="Arijit Singh">
+                        <h4 class="load">Arijit Singh</h4>
+                        <div class="card_play load">
+                            <img class="load" src="images/play_button1.png" alt="play">
+                        </div>
+                    </div>
+                    <div class="card load">
+                        <img class="load" src="images/Album_Thumbnail/Aditya Gadhavi.webp" alt="Aditya Gadhavi">
+                        <h4 class="load">Aditya Gadhavi</h4>
+                        <div class="card_play load">
+                            <img class="load" src="images/play_button1.png" alt="play">
+                        </div>
+                    </div>
+                    <div class="card load">
+                        <img class="load" src="images/Album_Thumbnail/Darshan Raval.webp" alt="Darshan Raval">
+                        <h4 class="load">Darshan Raval</h4>
+                        <div class="card_play load">
+                            <img class="load" src="images/play_button1.png" alt="play">
+                        </div>
+                    </div>
+                    <div class="card load">
+                        <img class="load" src="images/Album_Thumbnail/Papon.webp" alt="Papon">
+                        <h4 class="load">Papon</h4>
+                        <div class="card_play load">
+                            <img class="load" src="images/play_button1.png" alt="play">
+                        </div>
+                    </div>
+                    <div class="card load">
+                        <img class="load" src="images/Album_Thumbnail/Jubin Nautial.webp" alt="Jubin Nautial">
+                        <h4 class="load">Jubin Nautial</h4>
+                        <div class="card_play load">
+                            <img class="load" src="images/play_button1.png" alt="play">
+                        </div>
+                    </div>
+                    <div class="card load">
+                        <img class="load" src="images/Album_Thumbnail/Iqlipse Nova.webp" alt="Iqlipse Nova">
+                        <h4 class="load">Iqlipse Nova</h4>
+                        <div class="card_play load">
+                            <img class="load" src="images/play_button1.png" alt="play">
+                        </div>
+                    </div>
+                    <div class="card load">
+                        <img class="load" src="images/Album_Thumbnail/Anuv Jain.webp" alt="Anuv Jain">
+                        <h4 class="load">Anuv Jain</h4>
+                        <div class="card_play load">
+                            <img class="load" src="images/play_button1.png" alt="play">
+                        </div>
+                    </div>
+                    <div class="card load">
+                        <img class="load" src="images/Album_Thumbnail/Kailash Kher.webp" alt="Kailash Kher">
+                        <h4 class="load">Kailash Kher</h4>
+                        <div class="card_play load">
+                            <img class="load" src="images/play_button1.png" alt="play">
+                        </div>
+                    </div>
+                    <div class="card load">
+                        <img class="load" src="images/Album_Thumbnail/Sachin Jigar.webp" alt="Scahin Jigar">
+                        <h4 class="load">Sachin Jigar</h4>
+                        <div class="card_play load">
+                            <img class="load" src="images/play_button1.png" alt="play">
+                        </div>
+                    </div>
+                    <div class="card load">
+                        <img class="load" src="images/Album_Thumbnail/AP Dhilon.webp" alt="AP Dhilon">
+                        <h4 class="load">AP Dhilon</h4>
+                        <div class="card_play load">
+                            <img class="load" src="images/play_button1.png" alt="play">
+                        </div>
+                    </div>
+                    <div class="card load">
+                        <img class="load" src="images/Album_Thumbnail/Shankar Mahedevan.webp" alt="Shankar Mahedevan">
+                        <h4 class="load">Shankar Mahedevan</h4>
+                        <div class="card_play load">
+                            <img class="load" src="images/play_button1.png" alt="play">
+                        </div>
+                    </div>
+                    <div class="card load">
+                        <img class="load" src="images/Album_Thumbnail/Kishor Kumar.webp" alt="Kishor Kumar">
+                        <h4 class="load">Kishor Kumar</h4>
+                        <div class="card_play load">
+                            <img class="load" src="images/play_button1.png" alt="play">
+                        </div>
+                    </div>
+                    <div class="card load">
+                        <img class="load" src="images/Album_Thumbnail/Sonu Nigam.webp" alt="Sonu Nigam">
+                        <h4 class="load">Sonu Nigam</h4>
+                        <div class="card_play load">
+                            <img class="load" src="images/play_button1.png" alt="play">
+                        </div>
+                    </div>
+                    <div class="card load">
+                        <img class="load" src="images/Album_Thumbnail/Diljit Dosanjh.webp" alt="Diljit Dosanjh">
+                        <h4 class="load">Diljit Dosanjh</h4>
+                        <div class="card_play load">
+                            <img class="load" src="images/play_button1.png" alt="play">
+                        </div>
+                    </div>
+                </div>
+
+                <i class='bx bxs-chevron-left prev singer_prev' id="singer_left"></i>
+                <i class='bx bxs-chevron-right next singer_next' id="singer_right"></i>
+
+                <!-- Categories -->
+                <h2 id="genres" class="categories-heading">Categories</h2>
+                <div class="categories">
+                    <div class="card load">
+                        <img class="load" src="images/Album_Thumbnail/Hindi.webp" alt="Hindi">
+                        <h4 class="load">Hindi</h4>
+                        <div class="card_play load">
+                            <img class="load" src="images/play_button1.png" alt="play">
+                        </div>
+                    </div>
+                    <div class="card load">
+                        <img class="load" src="images/Album_Thumbnail/English.webp" alt="English">
+                        <h4 class="load" 4>English</h4>
+                        <div class="card_play load">
+                            <img class="load" src="images/play_button1.png" alt="play">
+                        </div>
+                    </div>
+                    <div class="card load">
+                        <img class="load" src="images/Album_Thumbnail/Punjabi.webp" alt="Punjabi">
+                        <h4 class="load" 4>Punjabi</h4>
+                        <div class="card_play load">
+                            <img class="load" src="images/play_button1.png" alt="play">
+                        </div>
+                    </div>
+                    <div class="card load">
+                        <img class="load" src="images/Album_Thumbnail/Chill.webp" alt="Chill">
+                        <h4 class="load">Chill</h4>
+                        <div class="card_play load">
+                            <img class="load" src="images/play_button1.png" alt="play">
+                        </div>
+                    </div>
+                    <div class="card load">
+                        <img class="load" src="images/Album_Thumbnail/Love.webp" alt="Love">
+                        <h4 class="load">Love</h4>
+                        <div class="card_play load">
+                            <img class="load" src="images/play_button1.png" alt="play">
+                        </div>
+                    </div>
+                    <div class="card load">
+                        <img class="load" src="images/Album_Thumbnail/Travel.webp" alt="Travel">
+                        <h4 class="load">Travel</h4>
+                        <div class="card_play load">
+                            <img class="load" src="images/play_button1.png" alt="play">
+                        </div>
+                    </div>
+                    <div class="card load">
+                        <img class="load" src="images/Album_Thumbnail/Workout.webp" alt="Workout">
+                        <h4 class="load">Workout</h4>
+                        <div class="card_play load">
+                            <img class="load" src="images/play_button1.png" alt="play">
+                        </div>
+                    </div>
+                    <div class="card load">
+                        <img class="load" src="images/Album_Thumbnail/Party.webp" alt="Party">
+                        <h4 class="load">Party</h4>
+                        <div class="card_play load">
+                            <img class="load" src="images/play_button1.png" alt="play">
+                        </div>
+                    </div>
+                    <div class="card load">
+                        <img class="load" src="images/Album_Thumbnail/Classical.webp" alt="Classical">
+                        <h4 class="load">Classical</h4>
+                        <div class="card_play load">
+                            <img class="load" src="images/play_button1.png" alt="play">
+                        </div>
+                    </div>
+                    <div class="card load">
+                        <img class="load" src="images/Album_Thumbnail/Instrumental.webp" alt="Instrumental">
+                        <h4 class="load">Instrumental</h4>
+                        <div class="card_play load">
+                            <img class="load" src="images/play_button1.png" alt="play">
+                        </div>
+                    </div>
+                    <div class="card load">
+                        <img class="load" src="images/Album_Thumbnail/Pop.webp" alt="Pop">
+                        <h4 class="load">Pop</h4>
+                        <div class="card_play load">
+                            <img class="load" src="images/play_button1.png" alt="play">
+                        </div>
+                    </div>
+                    <div class="card load">
+                        <img class="load" src="images/Album_Thumbnail/Jazz.webp" alt="Jazz">
+                        <h4 class="load">Jazz</h4>
+                        <div class="card_play load">
+                            <img class="load" src="images/play_button1.png" alt="play">
+                        </div>
+                    </div>
+                    <div class="card load">
+                        <img class="load" src="images/Album_Thumbnail/Rock.webp" alt="Rock">
+                        <h4 class="load">Rock</h4>
+                        <div class="card_play load">
+                            <img class="load" src="images/play_button1.png" alt="play">
+                        </div>
+                    </div>
+                </div>
+                <i class='bx bxs-chevron-left prev categories_prev' id="categories_left"></i>
+                <i class='bx bxs-chevron-right next categories_next' id="categories_right"></i>
+
+
+                <!-- Top Rated Playlists -->
+                <h2 id="top-rated" class="top-playlists-heading">Top Rated</h2>
+                <div class="top-playlists">
+                    <div class="top-rated-card top_20_global">
+                        <img src="images/Album_Thumbnail/TOP 20 GLOBAL.webp" alt="Top 20 GLOBAL">
+                        <h2 class="top_playlist_heading">TOP 20 GLOBAL</h2>
+                        <div class="playlist_song_list">
+                            <div class="playlist_song">
+                                <span class="song_num">1</span><span class="song_name"
+                                    data-src="audio/top 20 global/1.Apt .mp3">APT. - Rose & Bruno mars</span>
+                                <span class="song_time">02:54</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">2</span><span class="song_name"
+                                    data-src="audio/top 20 global/2 . Die With A Smile - Lady Gaga, Bruno Mars.mp3">Die
+                                    with
+                                    a smile</span>
+                                <span class="song_time">04:18</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">3</span><span class="song_name"
+                                    data-src="audio/top 20 global/3 . Aaj Ki Raat.mp3">Aaj ki raat</span>
+                                <span class="song_time">03:48</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">4</span><span class="song_name"
+                                    data-src="audio/top 20 global/4 . Peelings - Pushpa 2.mp3">Peelings
+                                    - Pushpa 2</span>
+                                <span class="song_time">04:07</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">5</span><span class="song_name"
+                                    data-src="audio/top 20 global/5 . Sigma Jxggi.mp3">Sigma Jxgg</span>
+                                <span class="song_time">02:25</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">6</span><span class="song_name"
+                                    data-src="audio/top 20 global/6 . Thing Of Beauty.mp3">Thing Of Beauty</span>
+                                <span class="song_time">03:44</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">7</span><span class="song_name"
+                                    data-src="audio/top 20 global/7 . Espresso.mp3">Espresso</span>
+                                <span class="song_time">02:59</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">8</span><span class="song_name"
+                                    data-src="audio/top 20 global/8 . Kissik - Pushpa 2.mp3">Kissik - Pushpa 2</span>
+                                <span class="song_time">04:09</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">9</span><span class="song_name"
+                                    data-src="audio/top 20 global/9 . The Weeknd - Save Your Tears.mp3">The Weeknd -
+                                    Save
+                                    Your Tears</span>
+                                <span class="song_time">04:15</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">10</span><span class="song_name"
+                                    data-src="audio/top 20 global/10 . Jo Tum Mere Ho - Anuv Jain.mp3">Jo Tum Mere Ho -
+                                    Anuv
+                                    Jain</span>
+                                <span class="song_time">04:11</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">11</span><span class="song_name"
+                                    data-src="audio/top 20 global/11 . Raanjhan Do Patti.mp3">Raanjhan Do Pattii</span>
+                                <span class="song_time">04:00</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">12</span><span class="song_name"
+                                    data-src="audio/top 20 global/12 . Come On.mp3">Come On</span>
+                                <span class="song_time">04:22</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">13</span><span class="song_name"
+                                    data-src="audio/top 20 global/13 . Aayi Nai - Stree 2.mp3">Aayi Nai - Stree 2</span>
+                                <span class="song_time">02:58</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">14</span><span class="song_name"
+                                    data-src="audio/top 20 global/14 . Payal.mp3">Payal</span>
+                                <span class="song_time">03:46</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">15</span><span class="song_name"
+                                    data-src="audio/top 20 global/15 . Hey Minnale.mp3">Hey Minnale</span>
+                                <span class="song_time">04:06</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">16</span><span class="song_name"
+                                    data-src="audio/top 20 global/16 . Wavy Karan Aujla.mp3">Wavy Karan Aujla</span>
+                                <span class="song_time">02:41</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">17</span><span class="song_name"
+                                    data-src="audio/top 20 global/17 . Syahi.mp3">Syahi</span>
+                                <span class="song_time">03:18</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">19</span><span class="song_name"
+                                    data-src="audio/top 20 global/19 . All The Stars Instrumental.mp3">All The Stars
+                                    Instrumental</span>
+                                <span class="song_time">03:50</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">20</span><span class="song_name"
+                                    data-src="audio/top 20 global/20 . Timeless - Raavi Gill.mp3">Timeless - Raavi
+                                    Gill</span>
+                                <span class="song_time">03:38</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="top-rated-card top_20_india">
+                        <img src="images/Album_Thumbnail/TOP 20 INDIA.webp" alt="Top 20 INDIA">
+                        <h2 class="top_playlist_heading">TOP 20 INDIA</h2>
+                        <div class="playlist_song_list">
+                            <div class="playlist_song">
+                                <span class="song_num">1</span><span class="song_name"
+                                    data-src="audio/top 20 india/1 . AFSOS ft. AP Dhillon.m4a">AFSOS ft. AP
+                                    Dhillon</span>
+                                <span class="song_time">03:11</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">2</span><span class="song_name"
+                                    data-src="audio/top 20 india/2 . WAVY.m4a">WAVY</span>
+                                <span class="song_time">02:40</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">3</span><span class="song_name"
+                                    data-src="audio/top 20 india/3 . Jhol.m4a">Jhol</span>
+                                <span class="song_time">04:38</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">4</span><span class="song_name"
+                                    data-src="audio/top 20 india/4 . Ishq Hai.m4a">Ishq Hai</span>
+                                <span class="song_time">02:02</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">5</span><span class="song_name"
+                                    data-src="audio/top 20 india/5 . Lady Gaga, Bruno Mars - Die With A Smile.m4a">Lady
+                                    Gaga, Bruno Mars - Die With A Smile</span>
+                                <span class="song_time">04:12</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">6</span><span class="song_name"
+                                    data-src="audio/top 20 india/6 . The Weeknd - Cry For Me.m4a">The Weeknd - Cry For
+                                    Me</span>
+                                <span class="song_time">04:05</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">7</span><span class="song_name"
+                                    data-src="audio/top 20 india/7 . Not Like Us.m4a">Not Like Us</span>
+                                <span class="song_time">05:54</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">8</span><span class="song_name"
+                                    data-src="audio/top 20 india/8 . Antidote Karan Aujla.m4a">Antidote Karan
+                                    Aujla</span>
+                                <span class="song_time">04:13</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">9</span><span class="song_name"
+                                    data-src="audio/top 20 india/9 . Timeless.m4a">Timeless</span>
+                                <span class="song_time">04:16</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">10</span><span class="song_name"
+                                    data-src="audio/top 20 india/10 . Apna Bana Le - Bhediya.m4a">Apna Bana Le -
+                                    Bhediya</span>
+                                <span class="song_time">03:24</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">11</span><span class="song_name"
+                                    data-src="audio/top 20 india/11 . Winning Speech - Karan Aujla.m4a">Winning Speech -
+                                    Karan Aujla</span>
+                                <span class="song_time">03:57</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">12</span><span class="song_name"
+                                    data-src="audio/top 20 india/12 . Diljit Dosanjh_ Tension.m4a">Diljit Dosanjh_
+                                    Tension</span>
+                                <span class="song_time">03:18</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">13</span><span class="song_name"
+                                    data-src="audio/top 20 india/13 . Shubh - Aura.m4a">Shubh - Aura</span>
+                                <span class="song_time">02:45</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">14</span><span class="song_name"
+                                    data-src="audio/top 20 india/14 . On Top.m4a">On Top</span>
+                                <span class="song_time">03:06</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">15</span><span class="song_name"
+                                    data-src="audio/top 20 india/15 . Diljit Dosanjh_ LOVER.m4a">Diljit Dosanjh_
+                                    LOVER</span>
+                                <span class="song_time">03:07</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">16</span><span class="song_name"
+                                    data-src="audio/top 20 india/16 . Anuv Jain - JO TUM MERE HO (Official Video).m4a">Anuv
+                                    Jain - JO TUM MERE HO</span>
+                                <span class="song_time">04:17</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">17</span><span class="song_name"
+                                    data-src="audio/top 20 india/17 . Kendrick Lamar - luther.m4a">Kendrick Lamar -
+                                    luther</span>
+                                <span class="song_time">02:57</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">18</span><span class="song_name"
+                                    data-src="audio/top 20 india/18 . Raanjhan - Do Patti.m4a">Raanjhan - Do
+                                    Patti</span>
+                                <span class="song_time">05:21</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">19</span><span class="song_name"
+                                    data-src="audio/top 20 india/19 . MILLIONAIRE SONG.m4a">MILLIONAIRE SONG</span>
+                                <span class="song_time">03:29</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">20</span><span class="song_name"
+                                    data-src="audio/top 20 india/20 . Sanam Teri Kasam.m4a">Sanam Teri Kasam</span>
+                                <span class="song_time">05:21</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="top-rated-card top_20_english">
+                        <img src="images/Album_Thumbnail/TOP 20 ENGLISH.webp" alt="Top 20 ENGLISH">
+                        <h2 class="top_playlist_heading">TOP 20 ENGLISH</h2>
+                        <div class="playlist_song_list">
+                            <div class="playlist_song">
+                                <span class="song_num">1</span><span class="song_name"
+                                    data-src="audio/top 20 english/1 . Shape of You - Ed Sheeran.mp3">Shape of You - Ed
+                                    Sheeran</span>
+                                <span class="song_time">04:23</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">2</span><span class="song_name"
+                                    data-src="audio/top 20 english/2 . Sugar - The Landers.mp3">Sugar - The
+                                    Landers</span>
+                                <span class="song_time">02:28</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">3</span><span class="song_name"
+                                    data-src="audio/top 20 english/3 . Love Stereo Again - Tiger Shroff.mp3">Love Stereo
+                                    Again - Tiger Shroff</span>
+                                <span class="song_time">03:26</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">4</span><span class="song_name"
+                                    data-src="audio/top 20 english/4 . Perfect - Akhil.mp3">Perfect - Akhil</span>
+                                <span class="song_time">02:46</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">5</span><span class="song_name"
+                                    data-src="audio/top 20 english/5 . Baby Girl - Guru Randhawa.mp3">Baby Girl - Guru
+                                    Randhawa</span>
+                                <span class="song_time">03:43</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">6</span><span class="song_name"
+                                    data-src="audio/top 20 english/6 . Coldplay - Paradise.m4a">Coldplay -
+                                    Paradise</span>
+                                <span class="song_time">04:20</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">7</span><span class="song_name"
+                                    data-src="audio/top 20 english/7 . Eminem - Without Me.m4a">Eminem - Without
+                                    Me</span>
+                                <span class="song_time">04:57</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">8</span><span class="song_name"
+                                    data-src="audio/top 20 english/8 . French Montana - Unforgettable ft. Swae Lee.m4a">French
+                                    Montana - Unforgettable ft. Swae Lee</span>
+                                <span class="song_time">04:46</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">9</span><span class="song_name"
+                                    data-src="audio/top 20 english/9 . Imagine Dragons - Believer.m4a">Imagine Dragons -
+                                    Believer</span>
+                                <span class="song_time">03:36</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">10</span><span class="song_name"
+                                    data-src="audio/top 20 english/10 . Imagine Dragons - Thunder.m4a">Imagine Dragons -
+                                    Thunder</span>
+                                <span class="song_time">03:24</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">11</span><span class="song_name"
+                                    data-src="audio/top 20 english/11 . Maroon 5 - Girls Like You ft. Cardi B.m4a">Maroon
+                                    5
+                                    - Girls Like You ft. Cardi B</span>
+                                <span class="song_time">04:30</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">12</span><span class="song_name"
+                                    data-src="audio/top 20 english/12 . Passenger _ Let Her Go.m4a">Passenger _ Let Her
+                                    Go</span>
+                                <span class="song_time">04:14</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">13</span><span class="song_name"
+                                    data-src="audio/top 20 english/13 . Perfect (Acoustic).m4a">Perfect
+                                    (Acoustic)</span>
+                                <span class="song_time">04:20</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">14</span><span class="song_name"
+                                    data-src="audio/top 20 english/14 . Señorita.m4a">Señorita</span>
+                                <span class="song_time">03:25</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">15</span><span class="song_name"
+                                    data-src="audio/top 20 english/15 . The Weeknd - Starboy ft. Daft Punk.m4a">The
+                                    Weeknd -
+                                    Starboy ft. Daft Punk</span>
+                                <span class="song_time">04:33</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">16</span><span class="song_name"
+                                    data-src="audio/top 20 english/16 . Alan Walker - Faded.m4a">Alan Walker -
+                                    Faded</span>
+                                <span class="song_time">03:32</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">17</span><span class="song_name"
+                                    data-src="audio/top 20 english/17 . Katy Perry - Dark Horse ft. Juicy J.m4a">Katy
+                                    Perry
+                                    - Dark Horse ft. Juicy J</span>
+                                <span class="song_time">03:45</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">18</span><span class="song_name"
+                                    data-src="audio/top 20 english/18 . Mark Ronson - Uptown Funk.m4a">Mark Ronson -
+                                    Uptown
+                                    Funk</span>
+                                <span class="song_time">04:30</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">19</span><span class="song_name"
+                                    data-src="audio/top 20 english/19 . OneRepublic - Counting Stars.m4a">OneRepublic -
+                                    Counting Stars</span>
+                                <span class="song_time">04:43</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">20</span><span class="song_name"
+                                    data-src="audio/top 20 english/20 . Wiz Khalifa - See You Again ft. Charlie Puth.m4a">Wiz
+                                    Khalifa - See You Again ft. Charlie Puth</span>
+                                <span class="song_time">03:57</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="top-rated-card top_20_hindi">
+                        <img src="images/Album_Thumbnail/TOP 20 HINDI.webp" alt="Top 20 HINDI">
+                        <h2 class="top_playlist_heading">TOP 20 HINDI</h2>
+                        <div class="playlist_song_list">
+                            <div class="playlist_song">
+                                <span class="song_num">1</span><span class="song_name"
+                                    data-src="audio/top 20 hindi/1 . Iktara - Wake Up.mp3">Iktara - Wake Up.mp3</span>
+                                <span class="song_time">04:13</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">2</span><span class="song_name"
+                                    data-src="audio/top 20 hindi/2 . Darasal - Raabta.mp3">Darasal - Raabta</span>
+                                <span class="song_time">04:34</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">3</span><span class="song_name"
+                                    data-src="audio/top 20 hindi/3 . Kya Karoon - Wake Up.mp3">Kya Karoon - Wake
+                                    Up</span>
+                                <span class="song_time">03:56</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">4</span><span class="song_name"
+                                    data-src="audio/top 20 hindi/4 . Sauda Hai Dil Ka Ye - Aakrosh.mp3">Sauda Hai Dil Ka
+                                    Ye
+                                    - Aakrosh</span>
+                                <span class="song_time">05:56</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">5</span><span class="song_name"
+                                    data-src="audio/top 20 hindi/5 , Samjhawan - Humpty Sharma Ki Dulhania.mp3">Samjhawan
+                                    -
+                                    Humpty Sharma Ki Dulhania</span>
+                                <span class="song_time">04:29</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">6</span><span class="song_name"
+                                    data-src="audio/top 20 hindi/6 . Manjha - Vishal Mishra.mp3">Manjha - Vishal
+                                    Mishra</span>
+                                <span class="song_time">03:11</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">7</span><span class="song_name"
+                                    data-src="audio/top 20 hindi/7 . Bolna.mp3">Bolna</span>
+                                <span class="song_time">03:32</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">8</span><span class="song_name"
+                                    data-src="audio/top 20 hindi/8 . Bulleya - Ae Dil Hai Mushkil.mp3">Bulleya - Ae Dil
+                                    Hai
+                                    Mushkil</span>
+                                <span class="song_time">05:49</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">9</span><span class="song_name"
+                                    data-src="audio/top 20 hindi/9 . Maahi Ve - Kal Ho Naa Ho.mp3">Maahi Ve - Kal Ho Naa
+                                    Ho</span>
+                                <span class="song_time">06:06</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">10</span><span class="song_name"
+                                    data-src="audio/top 20 hindi/10 . Aayi Nai - Stree 2.mp3">Aayi Nai - Stree 2</span>
+                                <span class="song_time">02:58</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">11</span><span class="song_name"
+                                    data-src="audio/top 20 hindi/11 . Khoobsurat - Stree 2.mp3">Khoobsurat - Stree
+                                    2</span>
+                                <span class="song_time">04:04</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">12</span><span class="song_name"
+                                    data-src="audio/top 20 hindi/12 . Mere Dholna 3.0 - Bhool Bhulaiyaa 3.mp3">Mere
+                                    Dholna
+                                    3.0 - Bhool Bhulaiyaa 3</span>
+                                <span class="song_time">04:26</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">13</span><span class="song_name"
+                                    data-src="audio/top 20 hindi/13 . Jaana Samjho Na - Bhool Bhulaiyaa 3.mp3">Jaana
+                                    Samjho
+                                    Na - Bhool Bhulaiyaa 3</span>
+                                <span class="song_time">03:32</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">14</span><span class="song_name"
+                                    data-src="audio/top 20 hindi/14 . Lutt Putt Gaya - Dunki.mp3">Lutt Putt Gaya -
+                                    Dunki</span>
+                                <span class="song_time">03:43</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">15</span><span class="song_name"
+                                    data-src="audio/top 20 hindi/15 . O Maahi - Dunki.mp3">O Maahi - Dunki</span>
+                                <span class="song_time">03:53</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">16</span><span class="song_name"
+                                    data-src="audio/top 20 hindi/16 . Khabar Nahi - Dostana.mp3">Khabar Nahi -
+                                    Dostana</span>
+                                <span class="song_time">04:19</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">17</span><span class="song_name"
+                                    data-src="audio/top 20 hindi/17 . Nadaaniyan.mp3">Nadaaniyan</span>
+                                <span class="song_time">02:55</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">18</span><span class="song_name"
+                                    data-src="audio/top 20 hindi/18 . Zaroor Aparshakti Khurana.mp3">Zaroor Aparshakti
+                                    Khurana</span>
+                                <span class="song_time">02:55</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">19</span><span class="song_name"
+                                    data-src="audio/top 20 hindi/19 . Dil Tu Jaan Tu - Gurnazar.mp3">Dil Tu Jaan Tu -
+                                    Gurnazar</span>
+                                <span class="song_time">03:57</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">20</span><span class="song_name"
+                                    data-src="audio/top 20 hindi/20 . Haan Ke Haan - Maharaj.mp3">Haan Ke Haan -
+                                    Maharaj</span>
+                                <span class="song_time">03:24</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="top-rated-card top_20_release">
+                        <img src="images/Album_Thumbnail/TOP 20 RELEASE.webp" alt="Top 20 RELEASE">
+                        <h2 class="top_playlist_heading">TOP 20 RELEASE</h2>
+                        <div class="playlist_song_list ">
+                            <div class="playlist_song">
+                                <span class="song_num">1</span><span class="song_name"
+                                    data-src="audio/top 20 release/1 . Die With A Smile.m4a">Die With A Smile</span>
+                                <span class="song_time">04:12</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">2</span><span class="song_name"
+                                    data-src="audio/top 20 release/2 .  I_m The Problem.m4a">I_m The Problem</span>
+                                <span class="song_time">02:57</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">3</span><span class="song_name"
+                                    data-src="audio/top 20 release/3 . Luther.m4a">Luther</span>
+                                <span class="song_time">02:57</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">4</span><span class="song_name"
+                                    data-src="audio/top 20 release/4 . BIRDS OF A FEATHER.m4a">BIRDS OF A FEATHER</span>
+                                <span class="song_time">03:50</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">5</span><span class="song_name"
+                                    data-src="audio/top 20 release/5 . A Bar Song.m4a">A Bar Song</span>
+                                <span class="song_time">02:53</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">6</span><span class="song_name"
+                                    data-src="audio/top 20 release/6 APT..m4a">APT.</span>
+                                <span class="song_time">02:53</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">7</span><span class="song_name"
+                                    data-src="audio/top 20 release/7 . Timeless.m4a">Timeless</span>
+                                <span class="song_time">04:16</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">8</span><span class="song_name"
+                                    data-src="audio/top 20 release/8 . Lose Control.m4a">Lose Control</span>
+                                <span class="song_time">03:29</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">9</span><span class="song_name"
+                                    data-src="audio/top 20 release/9 . Beautiful Things.m4a">Beautiful Things</span>
+                                <span class="song_time">03:12</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">10</span><span class="song_name"
+                                    data-src="audio/top 20 release/10 . tv off.m4a">tv off</span>
+                                <span class="song_time">03:40</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">11</span><span class="song_name"
+                                    data-src="audio/top 20 release/11 . Love Somebody.m4a">Love Somebody</span>
+                                <span class="song_time">03:24</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">12</span><span class="song_name"
+                                    data-src="audio/top 20 release/12 . Cry For Me.m4a">Cry For Me</span>
+                                <span class="song_time">04:05</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">13</span><span class="song_name"
+                                    data-src="audio/top 20 release/13 . That's So True.m4a">That's So True</span>
+                                <span class="song_time">02:46</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">14</span><span class="song_name"
+                                    data-src="audio/top 20 release/14 . Espresso.m4a">Espresso</span>
+                                <span class="song_time">03:20</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">15</span><span class="song_name"
+                                    data-src="audio/top 20 release/15 . Not Like Us.m4a">Not Like Us</span>
+                                <span class="song_time">05:54</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">16</span><span class="song_name"
+                                    data-src="audio/top 20 release/16 . I Had Some Help.m4a">I Had Some Help</span>
+                                <span class="song_time">03:21</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">17</span><span class="song_name"
+                                    data-src="audio/top 20 release/18 .  Messy.m4a">Messy</span>
+                                <span class="song_time">04:44</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">18</span><span class="song_name"
+                                    data-src="audio/top 20 release/19 . DtMF.m4a">DtMF</span>
+                                <span class="song_time">04:00</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                            <div class="playlist_song">
+                                <span class="song_num">19</span><span class="song_name"
+                                    data-src="audio/top 20 release/20 . squabble up.m4a">squabble up</span>
+                                <span class="song_time">02:45</span><img class="song_play" src="images/play_button.png"
+                                    alt="play/pause">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <i class='bx bxs-chevron-left prev top_prev' id="top_left"></i>
+                <i class='bx bxs-chevron-right next top_next' id="top_right"></i>
+
+            </div>
+        </div>
+
+        <div class="player_box">
+
+            <input type="range" min="0" max="100" value="0" class="seekbar" id="progress_bar">
+            <span class="current_time"></span>
+            <span class="end_time"></span>
+            <span class="current_title"></span>
+
+            <div class="controller">
+                <i id="previous" class='bx bx-skip-previous control_pic' onclick="setPrev(this)"></i>
+                <i id="operator" class='bx bx-play control_pic' onclick="setOperator(this)" value="pause"></i>
+                <i id="next" class='bx bx-skip-next control_pic' onclick="setNext(this)"></i>
+            </div>
+        </div>
+        <audio id="play_this" src=""></audio>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
